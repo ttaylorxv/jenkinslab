@@ -21,7 +21,7 @@ try {
             //openshiftBuild apiURL: '', authToken: '', bldCfg: """$branch""", buildName: '', checkForTriggeredDeployments: 'true', commitID: '', namespace: '', showBuildLogs: 'true', verbose: 'false', waitTime: '', waitUnit: 'sec'
             if (flag){
                 // Read payload which is a submitted JSON request from github and write to temp file
-                sh 'echo "$payload" >> tempGitFile.json'
+                sh 'echo $payload >> tempGitFile.json'
                 // From the temp file place into variable
                 def fromgithook = readJSON file: 'tempGitFile.json'
                 // find branch name and set to lower case for environment variables
