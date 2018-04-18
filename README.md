@@ -27,7 +27,7 @@ The Template can be broken down into 4 layers:
 3. Images
 4. Deployments
 
-For more info on the different layers: template layers
+For more info on the different layers: [template layers](docs/template_definitions.md)
 
 Note: A template will be defined in Json or Yaml format.
 
