@@ -1,4 +1,14 @@
-# Github - Jenkins - Openshift Repo/Lab
+# Github - Jenkins - Openshift Repo/Lab CICD Pipeline
+
+Goal: Standardize the process for a developer to automatically build and deploy their code changes without any extra overhead.
+
+Noteable Terms:
+- Continuous Integration: a practice that encourages developers to integrate their code into a main branch of a shared repository often to avoid any integration issues.
+
+- Continuous Delivery: automating the software delivery process so that teams can easily and confidently deploy their code to production at any time (usually concerned with reducing friction in the deployment or release process)
+
+- Continuous Deployment: automatically deploying each time a code change is made
+        
 ![Pipeline Diagram](docs/pipeline.png)
 
 This repo creates Openshift objects on-the-fly correlating to that branch.
