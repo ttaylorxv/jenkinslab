@@ -18,7 +18,7 @@ Flow of the lab:
 5. Add the Github Service to ensure push notifications are sent to Jenkins. 
 
 
-The Template:
+The Openshift Template:
 A template describes a set of objects that can be parameterized and processed to produce a list of objects for creation by Openshift. The objects to create can include anything that users have permissions to create within a project, such as services, build configurations, and deployment configurations.
 
 The Template can be broken down into 4 layers:
