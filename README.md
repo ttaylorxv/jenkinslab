@@ -7,7 +7,7 @@ In this lab you will need a few things to get started.
 1. Access to Internet
 2. Github Account
 3. Access to an Openshift Cluster
-4. A simple Node JS application (If you do not have one, you can grab one from here)
+4. A simple Node JS application (If you do not have one, you can grab one from [here](https://github.com/ttaylorxv/nodejs-jenk).)
 
 Flow of the lab:
 1. Create an Openshift Project
@@ -18,7 +18,20 @@ Flow of the lab:
 5. Add the Github Service to ensure push notifications are sent to Jenkins. 
 
 
+The Template:
+A template describes a set of objects that can be parameterized and processed to produce a list of objects for creation by Openshift. The objects to create can include anything that users have permissions to create within a project, such as services, build configurations, and deployment configurations.
 
+The Template can be broken down into 4 layers:
+1. Abstractions (i.e. routes, services, secrets, etc.)
+2. Builds
+3. Images
+4. Deployments
+
+For more info on the different layers: template layers
+
+Note: A template will be defined in Json or Yaml format.
+
+If you take a quick glance at the template, you might notice some variables. In order to make the template reusable, we must parameterize it.
 
 
 
@@ -31,5 +44,5 @@ In this lab we used the Multi-Branch pipeline in Jenkins. This allows us to grab
 
 For more help, reference the documents below:
 1. [Openshift Templates](https://docs.openshift.org/latest/dev_guide/templates.html)
-2. Groovy Scripting
-3  Info on Node JS can be found here. 
+2. [Groovy Scripting](http://groovy-lang.org/single-page-documentation.html)
+3. [Node JS](https://nodejs.org/en/docs/)
